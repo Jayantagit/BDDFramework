@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeClass;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features="./src/test/resources/Features", glue="StepDefinitions")
+@CucumberOptions(features="src/test/resources/Features", glue="StepDefinitions")
 
 public class Runner extends AbstractTestNGCucumberTests
 {
@@ -28,13 +28,15 @@ public class Runner extends AbstractTestNGCucumberTests
 		log.info("started");
 		logProperties.load(new FileInputStream(System.getProperty("user.dir")+"\\log4j.properties"));
 		PropertyConfigurator.configure(logProperties);
-        log.info("Logging initialized.");        
+        log.info("Logging initialized.");    
+        System.out.println("Test Started");
 	}
 	
 	 @AfterClass
 	 public void tearDownClass() throws Exception 
 	 {
 	       System.out.println("Test End");
+	       
 	 }
 	
 	

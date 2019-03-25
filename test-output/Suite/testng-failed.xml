@@ -5,9 +5,7 @@
     <classes>
       <class name="StepDefinitions.Runner">
         <methods>
-          <include name="setup"/>
           <include name="setUpClass"/>
-          <include name="TearDown"/>
           <include name="feature"/>
           <include name="tearDownClass"/>
         </methods>

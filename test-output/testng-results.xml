@@ -2,19 +2,19 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95" started-at="2019-03-25T08:19:05Z" finished-at="2019-03-25T08:19:06Z">
+  <suite name="Default suite" duration-ms="95" started-at="2019-03-25T11:15:48Z" finished-at="2019-03-25T11:15:48Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:StepDefinitions.Runner@59494225]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:StepDefinitions.Runner@544fe44c]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="95" started-at="2019-03-25T08:19:05Z" finished-at="2019-03-25T08:19:06Z">
+    <test name="Default test" duration-ms="95" started-at="2019-03-25T11:15:48Z" finished-at="2019-03-25T11:15:48Z">
       <class name="StepDefinitions.Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:StepDefinitions.Runner@59494225]" name="setUpClass" is-config="true" duration-ms="60" started-at="2019-03-25T08:19:05Z" finished-at="2019-03-25T08:19:06Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:StepDefinitions.Runner@544fe44c]" name="setUpClass" is-config="true" duration-ms="50" started-at="2019-03-25T11:15:48Z" finished-at="2019-03-25T11:15:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="SKIP" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:StepDefinitions.Runner@59494225]" name="feature" duration-ms="0" started-at="2019-03-25T08:19:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-03-25T08:19:06Z">
+        <test-method status="SKIP" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:StepDefinitions.Runner@544fe44c]" name="feature" duration-ms="0" started-at="2019-03-25T11:15:48Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-03-25T11:15:48Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NullPointerException]]>
@@ -60,7 +60,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(Met
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:StepDefinitions.Runner@59494225]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2019-03-25T08:19:06Z" finished-at="2019-03-25T08:19:06Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:StepDefinitions.Runner@544fe44c]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2019-03-25T11:15:48Z" finished-at="2019-03-25T11:15:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
