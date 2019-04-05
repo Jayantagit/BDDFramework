@@ -44,7 +44,7 @@ public class Hooks
 			} 
 			
 		}
-		driver.close();
+		driver.quit();
 		
 	}
 

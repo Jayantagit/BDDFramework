@@ -9,14 +9,15 @@ import StepDefinitions.Hooks;
 
 public class LoginPage 
 {
-	public WebDriver driver; 	
+	public WebDriver driver;
+	
 	@FindBy(id="username") public WebElement username;
 	@FindBy(id="password") public WebElement password;
 	@FindBy(id="loginb")   public WebElement login;
 	
 	public LoginPage() 
 	{
-		driver = Hooks.driver; 
+		driver=Hooks.driver;
 		PageFactory.initElements(driver, this);
 		
 	}

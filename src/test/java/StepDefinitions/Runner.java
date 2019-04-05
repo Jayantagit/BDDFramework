@@ -10,14 +10,21 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(features="src/test/resources/Features", glue="StepDefinitions")
-
+	
+@CucumberOptions(
+		 features="src/test/resources/Features",
+		 glue="StepDefinitions",
+		 plugin = { "pretty", "html:target/cucumber-html-report"}
+		)
+@Test
 public class Runner extends AbstractTestNGCucumberTests
 {
+	/*
 	public static final Logger log = Logger.getLogger(Runner.class);
 	public static final String LOG_FILE= "log4j.properties";
 	
@@ -32,14 +39,17 @@ public class Runner extends AbstractTestNGCucumberTests
         System.out.println("Test Started");
 	}
 	
+
 	 @AfterClass
 	 public void tearDownClass() throws Exception 
 	 {
 	       System.out.println("Test End");
 	       
 	 }
+	 
 	
 	
+	*/
 	
 	
 }
