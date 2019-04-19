@@ -40,14 +40,14 @@ public class StepDef1
    	  
 	}
 
-	@When("^I navigate to Lead List and enter the Name for Quick Search$")	
-	public void i_navigate_to_Lead_List_and_enter_the_Name_for_Quick_Search() throws Throwable 
+	@When("^I navigate to Lead List and enter the Name \"([^\"]*)\" for Quick Search$")
+	public void i_navigate_to_Lead_List_and_enter_the_Name_for_Quick_Search(String searchText) throws Throwable 
 	{
 		
 		driver.get("https://stage01"+".convergehub.com/leads");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		lead.BasicSearchTxt.clear();
-		lead.BasicSearchTxt.sendKeys("Test");
+		lead.BasicSearchTxt.sendKeys(searchText);
 		
 	}
 
