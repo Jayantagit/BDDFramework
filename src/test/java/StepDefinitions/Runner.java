@@ -19,7 +19,8 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
 		 features="src/test/resources/Features",
 		 glue="StepDefinitions",
-		 plugin = { "pretty", "html:target/cucumber-html-report"}
+		 tags = {"@Sanity"},
+		 plugin = {"pretty", "html:target/cucumber-html-report"}
 		)
 @Test
 public class Runner extends AbstractTestNGCucumberTests
