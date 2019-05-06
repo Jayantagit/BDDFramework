@@ -44,6 +44,9 @@ public class Hooks
 			} 
 			
 		}
+		
+		System.out.println("Test Execution Completed");
+		driver.get("https://stage01"+".convergehub.com/users/logout");
 		driver.quit();
 		
 	}
